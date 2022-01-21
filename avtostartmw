@@ -4,7 +4,7 @@ Description=avtostart_mower_3
 [Service]
 User=stryb
 Type=simple
-ExecStart=bin/bash /usr/local/bin/startmw_1 start
+ExecStart=bin/bash /usr/local/bin/start_mower_3.sh start
 TimeoutSec=300
 
 [Install]
