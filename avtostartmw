@@ -1,0 +1,11 @@
+[Unit] 
+Description=avtostart_mower_3
+
+[Service]
+User=stryb
+Type=simple
+ExecStart=bin/bash /usr/local/bin/startmw_1 start
+TimeoutSec=300
+
+[Install]
+WantedBy=multi-user.target
