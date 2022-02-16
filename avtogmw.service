@@ -1,0 +1,16 @@
+[Unit]
+Description = mower_3 graphical
+After=networking.service graphical.target
+Wants=networking.service graphical.target
+
+
+
+[Service]
+Environment=DISPLAY=:0.0
+Environment=XAUTHORITY=/home/stryb/.Xauthority
+ExecStart=
+ExecStart=/home/stryb/ros_ws/startmw3.sh
+
+
+[Install]
+WantedBy=graphical.target
