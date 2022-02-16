@@ -1,0 +1,7 @@
+<launch>
+<arg name="device" default="/dev/ttyUSB0"/>
+<node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="keyb"/>
+<node pkg="rosserial_python" type="serial_node.py" name="pUSB">
+<param name="port" value="$(arg device)"/>
+</node>
+</launch>
